@@ -38,7 +38,7 @@ const ProjectCard: React.FC<Project> = ({
         {techStack.map((tech, index) => (
           <li
             key={index}
-            className="inline-block mr-2 mb-2 px-2 py-1 bg-white bg-opacity-15 bg-gray-700 rounded"
+            className="inline-block mr-2 mb-2 px-2 py-1 bg-opacity-15 bg-gray-700 rounded"
           >
             {tech}
           </li>
