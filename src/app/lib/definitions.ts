@@ -16,3 +16,9 @@ export type SocialLink = {
   link: string;
   icon: string;
 };
+
+export type Skill = {
+  title: string;
+  icon: string;
+  style?: object;
+};

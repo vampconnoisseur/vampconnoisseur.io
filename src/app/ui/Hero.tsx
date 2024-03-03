@@ -1,19 +1,26 @@
 import React from "react";
-import { JetBrainsMono, BeVietnamProBold } from "../lib/fonts";
+import { PlayfairDisplayRegular, PlayfairDisplayHeading } from "../lib/fonts";
 
 function Hero() {
   return (
-    <div className="text-center max-w-[980px] mx-auto">
+    <div className="text-center max-w-[980px] mx-auto pt-20">
       <h1
-        className={`${JetBrainsMono.className} text-2xl mt-14 animate-fade-in-short`}
+        className={`${PlayfairDisplayRegular.className} text-2xl mt-14 animate-fade-in-short`}
       >
         Hey, I&apos;m Jaiditya.
       </h1>
       <h1
-        className={`${BeVietnamProBold.className} text-7xl font-bold mb-8 mt-10 animate-fade-in-long`}
+        className={`${PlayfairDisplayRegular.className} text-7xl font-bold mb-8 mt-10 animate-fade-in-long`}
       >
-        I enjoy <span className="text-gray-700">building</span> and{" "}
-        <span className="text-gray-700">designing</span> Full Stack apps.
+        I enjoy{" "}
+        <span className={`${PlayfairDisplayHeading.className} text-black`}>
+          Building
+        </span>{" "}
+        and{" "}
+        <span className={`${PlayfairDisplayHeading.className} text-black`}>
+          Designing
+        </span>{" "}
+        Full Stack apps.
       </h1>
     </div>
   );

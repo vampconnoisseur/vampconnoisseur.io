@@ -1,46 +1,42 @@
-import { Project, SocialLink } from "./definitions";
+import { Project, SocialLink, Skill } from "./definitions";
 
 export const projectsData: Project[] = [
   {
-    projectName: "Project 1",
-    description: "Project Description 1",
+    projectName: "Sadak Soochak",
+    description:
+      "Developed a system to regulate the flow of traffic around a roundabout or crossroad based upon traffic density.",
     image: "/dummy_image.jpg",
-    techStack: ["abc", "abc", "abc", "abc", "abc"],
+    techStack: [
+      "Next.js",
+      "TypeScript",
+      "Vercel",
+      "PostgreSQL",
+      "Flask",
+      "Tailwind CSS",
+    ],
     github: "https://github.com/vampconnoisseur?tab=repositories",
   },
   {
-    projectName: "Project 2",
-    description: "Project Description 2",
+    projectName: "Clean Catalogue",
+    description:
+      "Developed an app with a mechanism which scores catalogues using the capabilites of GPT4 vision.",
     image: "/dummy_image.jpg",
-    techStack: ["abc", "abc", "abc"],
+    techStack: [
+      "Flutter",
+      "MongoDB",
+      "Mongoose",
+      "Tailwind CSS",
+      "GPT4V",
+      "Next.js",
+    ],
     github: "https://github.com/vampconnoisseur?tab=repositories",
   },
   {
-    projectName: "Project 3",
-    description: "Project Description 3",
+    projectName: "Gather",
+    description:
+      "Developed a video conferencing app with corporate meeting optimized architecture as a Full Stack Developer.",
     image: "/dummy_image.jpg",
-    techStack: ["abc", "abc"],
-    github: "https://github.com/vampconnoisseur?tab=repositories",
-  },
-  {
-    projectName: "Project 4",
-    description: "Project Description 4",
-    image: "/dummy_image.jpg",
-    techStack: ["abc", "abc"],
-    github: "https://github.com/vampconnoisseur?tab=repositories",
-  },
-  {
-    projectName: "Project 5",
-    description: "Project Description 5",
-    image: "/dummy_image.jpg",
-    techStack: ["abc", "abc", "abc", "abc", "abc"],
-    github: "https://github.com/vampconnoisseur?tab=repositories",
-  },
-  {
-    projectName: "Project 6",
-    description: "Project Description 6",
-    image: "/dummy_image.jpg",
-    techStack: ["abc", "abc"],
+    techStack: ["Flutter", "Agora", "Firebase", "Node.js", "Render"],
     github: "https://github.com/vampconnoisseur?tab=repositories",
   },
 ];
@@ -65,5 +61,68 @@ export const socialData: SocialLink[] = [
     name: "Mail",
     icon: "/icons/mail.svg",
     link: "https://github.com/vampconnoisseur?tab=repositories",
+  },
+];
+
+export const skills: Skill[] = [
+  {
+    title: "HTML",
+    icon: "/skill-icons/html.svg",
+  },
+  {
+    title: "CSS",
+    icon: "/skill-icons/css.svg",
+  },
+  {
+    title: "Javascript",
+    icon: "/skill-icons/js.svg",
+  },
+  {
+    title: "TailwindCSS",
+    icon: "/skill-icons/tailwind.svg",
+  },
+  {
+    title: "React",
+    icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg",
+  },
+  {
+    title: "NextJS",
+    icon: "/skill-icons/next.svg",
+  },
+  {
+    title: "Typescript",
+    icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/typescript/typescript-original.svg",
+  },
+  {
+    title: "NodeJS",
+    icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg",
+  },
+  {
+    title: "Express",
+    icon: "/skill-icons/express.svg",
+  },
+  {
+    title: "MongoDB",
+    icon: "/skill-icons/mongodb.svg",
+  },
+  {
+    title: "Flutter",
+    icon: "/skill-icons/flutter.svg",
+  },
+  {
+    title: "Dart",
+    icon: "/skill-icons/dart.svg",
+  },
+  {
+    title: "PostgreSQL",
+    icon: "/skill-icons/postgres.svg",
+  },
+  {
+    title: "Git",
+    icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg",
+  },
+  {
+    title: "Firebase",
+    icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/firebase/firebase-plain.svg",
   },
 ];

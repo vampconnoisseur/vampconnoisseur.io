@@ -1,20 +1,20 @@
-import Image from "next/image";
 import Link from "next/link";
 import { NavLinkProps } from "../lib/definitions";
-import { BeVietnamProRegular } from "../lib/fonts";
+import { BeVietnamProRegular, PlayfairDisplayMedium } from "../lib/fonts";
 
 export default function Navbar() {
   return (
-    <nav className="flex items-center justify-between py-4 px-6">
-      <div className="flex items-center flex-shrink-0 text-white mr-6">
+    <nav className="fixed top-0 left-0 right-0 z-10 flex items-center justify-between py-4 px-6 bg-white opacity-90 shadow">
+      <div className="flex items-center flex-shrink-0 mr-6">
         <Link href="/">
-          <Image className="h-8 w-auto mr-2" src="" alt="Logo" />
+          <h1 className={`${PlayfairDisplayMedium.className}`}>
+            vampconnoisseur.
+          </h1>
         </Link>
       </div>
       <div className="flex items-center space-x-4">
-        <NavLink href="/" title="Home" />
-        <NavLink href="/" title="Projects" />
-        <NavLink href="/" title="About" />
+        <NavLink href="/" title="HOME" />
+        <NavLink href="/projects" title="PROJECTS" />
       </div>
     </nav>
   );
@@ -24,7 +24,7 @@ const NavLink: React.FC<NavLinkProps> = ({ href, title }) => {
   return (
     <Link
       href={href}
-      className={`${BeVietnamProRegular.className} text-white-300 hover:bg-gray-700 px-3 py-2 rounded-md text-sm font-medium`}
+      className={`${BeVietnamProRegular.className} hover:bg-gray-300 px-3 py-2 rounded-md text-sm font-medium`}
     >
       {title}
     </Link>
