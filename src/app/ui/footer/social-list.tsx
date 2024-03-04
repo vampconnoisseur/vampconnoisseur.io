@@ -1,5 +1,5 @@
 import Image from "next/image";
-import { socialData } from "@/app/lib/placeholder-data";
+import { socialData } from "../../lib/placeholder-data";
 
 export default function SocialList() {
   return (

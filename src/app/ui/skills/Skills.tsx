@@ -30,7 +30,7 @@ export default function Skills() {
               <Image
                 src={skill.icon}
                 alt={skill.title}
-                style={skill.style}
+                // style={skill.style}
                 width={16}
                 height={16}
                 className={"w-12 h-12 mb-2"}

@@ -1,14 +1,16 @@
 import ProjectCard from "./ProjectCard";
-import { projectsData } from "../../lib/placeholder-data";
 import { Project } from "../../lib/definitions";
+import { fetchProjects } from "@/app/lib/data";
 
-export default function Projects({
+export default async function Projects({
   limit,
   addHeading = true,
 }: {
   limit?: number;
   addHeading?: boolean;
 }) {
+  const projectsData = await fetchProjects();
+
   return (
     <section className="mt-40 mb-20">
       {addHeading && (
@@ -22,10 +24,10 @@ export default function Projects({
         {projectsData.slice(0, limit).map((project: Project, index: number) => (
           <ProjectCard
             key={index}
-            projectName={project.projectName}
+            projectname={project.projectname}
             description={project.description}
-            image={project.image}
-            techStack={project.techStack}
+            images={project.images}
+            techstack={project.techstack}
             github={project.github}
           />
         ))}

@@ -6,24 +6,19 @@ import { EmblaOptionsType } from "embla-carousel";
 const OPTIONS: EmblaOptionsType = {};
 
 const ProjectCard: React.FC<Project> = ({
-  projectName,
+  projectname,
   description,
-  image,
-  techStack,
+  images,
+  techstack,
   github,
 }) => {
-  const SLIDES: string[] = [image, image, image];
-
   return (
     <div className="relative">
       <div className="rounded-lg shadow-lg p-3 border border-gray-300 mb-4 transition-transform hover:-translate-y-2 transition-shadow hover:shadow-2xl">
-        {/* <div className="relative aspect-w-4 aspect-h-1">
-          <Image src={image} alt={projectName} width={400} height={500} />
-        </div> */}
-        <EmblaCarousel slides={SLIDES} options={OPTIONS} />
+        <EmblaCarousel slides={images} options={OPTIONS} />
       </div>
       <div className="flex items-center justify-between mb-1">
-        <h3 className="text-xl font-bold">{projectName}</h3>
+        <h3 className="text-xl font-bold">{projectname}</h3>
         <a href={github} target="_blank" rel="noopener noreferrer">
           <Image
             src="/icons/github-black.svg"
@@ -35,7 +30,7 @@ const ProjectCard: React.FC<Project> = ({
       </div>
       <p className="text-sm text-gray-600 mb-4">{description}</p>
       <ul className="mt-2">
-        {techStack.map((tech, index) => (
+        {techstack.map((tech, index) => (
           <li
             key={index}
             className="inline-block mr-2 mb-2 px-2 py-1 bg-opacity-15 bg-gray-700 rounded"

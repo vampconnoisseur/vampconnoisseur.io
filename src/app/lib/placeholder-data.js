@@ -1,11 +1,14 @@
-import { Project, SocialLink, Skill } from "./definitions";
-
-export const projectsData: Project[] = [
+const projectsData = [
   {
     projectName: "Sadak Soochak",
     description:
       "Developed a system to regulate the flow of traffic around a roundabout or crossroad based upon traffic density.",
-    image: "/dummy_image.jpg",
+    images: [
+      "/dummy_image.jpg",
+      "/dummy_image.jpg",
+      "/dummy_image.jpg",
+      "/dummy_image.jpg",
+    ],
     techStack: [
       "Next.js",
       "TypeScript",
@@ -20,7 +23,7 @@ export const projectsData: Project[] = [
     projectName: "Clean Catalogue",
     description:
       "Developed an app with a mechanism which scores catalogues using the capabilites of GPT4 vision.",
-    image: "/dummy_image.jpg",
+    images: ["/dummy_image.jpg", "/dummy_image.jpg", "/dummy_image.jpg"],
     techStack: [
       "Flutter",
       "MongoDB",
@@ -35,13 +38,20 @@ export const projectsData: Project[] = [
     projectName: "Gather",
     description:
       "Developed a video conferencing app with corporate meeting optimized architecture as a Full Stack Developer.",
-    image: "/dummy_image.jpg",
+    images: [
+      "/dummy_image.jpg",
+      "/dummy_image.jpg",
+      "/dummy_image.jpg",
+      "/dummy_image.jpg",
+      "/dummy_image.jpg",
+      "/dummy_image.jpg",
+    ],
     techStack: ["Flutter", "Agora", "Firebase", "Node.js", "Render"],
     github: "https://github.com/vampconnoisseur?tab=repositories",
   },
 ];
 
-export const socialData: SocialLink[] = [
+const socialData = [
   {
     name: "Github",
     icon: "/icons/github.svg",
@@ -64,7 +74,7 @@ export const socialData: SocialLink[] = [
   },
 ];
 
-export const skills: Skill[] = [
+const skills = [
   {
     title: "HTML",
     icon: "/skill-icons/html.svg",
@@ -126,3 +136,9 @@ export const skills: Skill[] = [
     icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/firebase/firebase-plain.svg",
   },
 ];
+
+module.exports = {
+  projectsData,
+  socialData,
+  skills,
+};

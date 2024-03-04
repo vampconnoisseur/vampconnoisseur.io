@@ -4,10 +4,10 @@ export type NavLinkProps = {
 };
 
 export type Project = {
-  projectName: string;
+  projectname: string;
   description: string;
-  image: string;
-  techStack: string[];
+  images: string[];
+  techstack: string[];
   github: string;
 };
 
