@@ -14,13 +14,15 @@ export default async function Projects({
   return (
     <section className="mt-40 mb-20">
       {addHeading && (
-        <div className="flex items-center mb-12 text-center">
+        <div className="flex items-center mb-12 text-center px-6">
           <hr className="flex-grow border-t border-black border-solid" />
-          <h2 className="text-3xl font-bold mx-4">Some of my projects</h2>
+          <h2 className="text-xl md:text-3xl font-bold mx-4">
+            Some of my projects
+          </h2>
           <hr className="flex-grow border-t border-black border-solid" />
         </div>
       )}
-      <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+      <div className="grid grid-cols-1 px-6 md:grid-cols-2 gap-8 lg:grid-cols-3">
         {projectsData.slice(0, limit).map((project: Project, index: number) => (
           <ProjectCard
             key={index}

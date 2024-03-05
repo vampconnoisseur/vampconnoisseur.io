@@ -13,7 +13,7 @@ const ProjectCard: React.FC<Project> = ({
   github,
 }) => {
   return (
-    <div className="relative">
+    <div className="relative mb-8">
       <div className="rounded-lg shadow-lg p-3 border border-gray-300 mb-4 transition-transform hover:-translate-y-2 transition-shadow hover:shadow-2xl">
         <EmblaCarousel slides={images} options={OPTIONS} />
       </div>

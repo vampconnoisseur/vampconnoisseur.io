@@ -38,7 +38,7 @@ const EmblaCarousel: React.FC<PropType> = (props) => {
               <Image
                 priority
                 src={slide}
-                width={400}
+                width={800}
                 height={200}
                 alt=""
                 style={{

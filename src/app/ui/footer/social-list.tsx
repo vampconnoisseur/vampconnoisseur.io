@@ -14,7 +14,7 @@ export default function SocialList() {
               width={16}
               height={16}
             />
-            {socialLink.name}
+            <span className="hidden sm:inline">{socialLink.name}</span>
           </a>
         </div>
       ))}
