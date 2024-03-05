@@ -4,10 +4,14 @@ const projectsData = [
     description:
       "Developed a system to regulate the flow of traffic around a roundabout or crossroad based upon traffic density.",
     images: [
-      "/dummy_image.jpg",
-      "/dummy_image.jpg",
-      "/dummy_image.jpg",
-      "/dummy_image.jpg",
+      "/sadak-soochak-images/sadak-soochak-1.jpg",
+      "/sadak-soochak-images/sadak-soochak-2.jpg",
+      "/sadak-soochak-images/sadak-soochak-3.jpg",
+      "/sadak-soochak-images/sadak-soochak-4.jpg",
+      "/sadak-soochak-images/sadak-soochak-5.jpg",
+      "/sadak-soochak-images/sadak-soochak-6.jpg",
+      "/sadak-soochak-images/sadak-soochak-7.jpg",
+      "/sadak-soochak-images/sadak-soochak-8.jpg",
     ],
     techStack: [
       "Next.js",
@@ -23,7 +27,12 @@ const projectsData = [
     projectName: "Clean Catalogue",
     description:
       "Developed an app with a mechanism which scores catalogues using the capabilites of GPT4 vision.",
-    images: ["/dummy_image.jpg", "/dummy_image.jpg", "/dummy_image.jpg"],
+    images: [
+      "/clean-catalogue-images/clean-catalogue-1.jpg",
+      "/clean-catalogue-images/clean-catalogue-2.jpg",
+      "/clean-catalogue-images/clean-catalogue-3.jpg",
+      "/clean-catalogue-images/clean-catalogue-4.jpg",
+    ],
     techStack: [
       "Flutter",
       "MongoDB",
@@ -39,12 +48,11 @@ const projectsData = [
     description:
       "Developed a video conferencing app with corporate meeting optimized architecture as a Full Stack Developer.",
     images: [
-      "/dummy_image.jpg",
-      "/dummy_image.jpg",
-      "/dummy_image.jpg",
-      "/dummy_image.jpg",
-      "/dummy_image.jpg",
-      "/dummy_image.jpg",
+      "/gather-images/gather-1.jpg",
+      "/gather-images/gather-2.jpg",
+      "/gather-images/gather-3.jpg",
+      "/gather-images/gather-4.jpg",
+      "/gather-images/gather-5.jpg",
     ],
     techStack: ["Flutter", "Agora", "Firebase", "Node.js", "Render"],
     github: "https://github.com/vampconnoisseur?tab=repositories",
