@@ -27,7 +27,7 @@ export function CardSkeleton() {
 
 export function CardsSkeleton() {
   return (
-    <div className="grid grid-cols-1 md:grid-cols-3 gap-6 justify-between m-6 mt-12">
+    <div className="grid grid-cols-1 md:grid-cols-2 gap-8 lg:grid-cols-3 justify-between m-6 mt-12">
       <CardSkeleton />
       <CardSkeleton />
       <CardSkeleton />

@@ -1,5 +1,11 @@
 import Projects from "../ui/projects/Projects";
 import { PlayfairDisplayMedium, PlayfairDisplayHeading } from "../lib/fonts";
+import { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "Projects | Jaiditya Batra",
+  description: "Portfolio of Jaiditya Batra.",
+};
 
 export default function Page() {
   return (
