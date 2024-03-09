@@ -1,9 +1,12 @@
-import React from "react";
 import { PlayfairDisplayHeading, PlayfairDisplayMedium } from "../lib/fonts";
+import ScrollButton from "./scroll-button";
 
 export default function Hero() {
   return (
-    <div className="text-center max-w-[980px] md:mx-auto mx-6 pt-20">
+    <section
+      className="text-center max-w-[980px] md:mx-auto mx-6 pt-20 pb-40 flex flex-col items-center"
+      id="section-0"
+    >
       <h1
         className={`${PlayfairDisplayHeading.className} text-2xl mt-14 animate-fade-in-short`}
       >
@@ -18,6 +21,7 @@ export default function Hero() {
         <span className={`${PlayfairDisplayMedium.className}`}>Designing</span>{" "}
         Full Stack apps.
       </h1>
-    </div>
+      <ScrollButton />
+    </section>
   );
 }

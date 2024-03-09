@@ -1,22 +1,24 @@
-import { Suspense } from "react";
 import Hero from "./ui/Hero";
-import Projects from "./ui/projects/Projects";
 import Skills from "./ui/skills/Skills";
 import { CardsSkeleton } from "./ui/skeletons";
+import SideNavigator from "./ui/side-navigator";
 
 export default function Home() {
   return (
     <main>
       <Hero />
-      <section className="mt-40 mb-20">
-        <div className="flex items-center mb-12 text-center">
+      <section className="mt-40 mb-20" id="section-1">
+        <div className="flex items-center mb-12 text-center px-6">
           <hr className="flex-grow border-t border-black border-solid" />
-          <h2 className="text-3xl font-bold mx-4">Some of my projects</h2>
+          <h2 className="text-xl md:text-3xl font-bold mx-4">
+            Some of my projects
+          </h2>
           <hr className="flex-grow border-t border-black border-solid" />
         </div>
         <CardsSkeleton />
       </section>
       <Skills />
+      <SideNavigator sections={3} />
     </main>
   );
 }

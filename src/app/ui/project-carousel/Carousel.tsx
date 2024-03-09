@@ -1,5 +1,3 @@
-"use client";
-
 import { EmblaOptionsType } from "embla-carousel";
 import { DotButton, useDotButton } from "./CarouselDotButton";
 import {
@@ -10,13 +8,12 @@ import {
 import useEmblaCarousel from "embla-carousel-react";
 import Image from "next/image";
 
-type PropType = {
+const EmblaCarousel: React.FC<{
   slides: string[];
   options?: EmblaOptionsType;
-};
-
-const EmblaCarousel: React.FC<PropType> = (props) => {
-  const { slides, options } = props;
+  github: string;
+}> = (props) => {
+  const { slides, options, github } = props;
   const [emblaRef, emblaApi] = useEmblaCarousel(options);
 
   const { selectedIndex, scrollSnaps, onDotButtonClick } =
@@ -35,16 +32,18 @@ const EmblaCarousel: React.FC<PropType> = (props) => {
         <div className="embla__container">
           {slides.map((slide, index) => (
             <div className="embla__slide" key={index}>
-              <Image
-                priority
-                src={slide}
-                width={800}
-                height={200}
-                alt=""
-                style={{
-                  borderRadius: "4%",
-                }}
-              />
+              <a href={github} target="_blank" rel="noopener noreferrer">
+                <Image
+                  priority
+                  src={slide}
+                  width={800}
+                  height={200}
+                  alt=""
+                  style={{
+                    borderRadius: "4%",
+                  }}
+                />
+              </a>
             </div>
           ))}
         </div>

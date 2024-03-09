@@ -21,7 +21,7 @@ const projectsData = [
       "Flask",
       "Tailwind CSS",
     ],
-    github: "https://github.com/vampconnoisseur?tab=repositories",
+    github: "https://github.com/vampconnoisseur/sadak-soochak",
   },
   {
     projectName: "Clean Catalogue",
@@ -41,7 +41,7 @@ const projectsData = [
       "GPT4V",
       "Next.js",
     ],
-    github: "https://github.com/vampconnoisseur?tab=repositories",
+    github: "https://github.com/vampconnoisseur/clean_catalogue_app",
   },
   {
     projectName: "Gather",
@@ -55,7 +55,7 @@ const projectsData = [
       "/gather-images/gather-5.jpg",
     ],
     techStack: ["Flutter", "Agora", "Firebase", "Node.js", "Render"],
-    github: "https://github.com/vampconnoisseur?tab=repositories",
+    github: "https://github.com/vampconnoisseur/gather_app",
   },
 ];
 

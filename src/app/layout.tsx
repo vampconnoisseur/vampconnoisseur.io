@@ -19,13 +19,11 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={`${inter.className} text-black`}>
-        <>
-          <Navbar />
-          <div className="max-w-screen-xl mx-auto">{children}</div>
-          <div className="mx-auto bg-black">
-            <Footer />
-          </div>
-        </>
+        <Navbar />
+        <div className="max-w-screen-xl mx-auto px-12">{children}</div>
+        <div className="mx-auto bg-black">
+          <Footer />
+        </div>
       </body>
     </html>
   );

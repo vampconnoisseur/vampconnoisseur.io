@@ -3,7 +3,7 @@ import { PlayfairDisplayMedium, PlayfairDisplayHeading } from "../lib/fonts";
 
 export default async function Projects() {
   return (
-    <div>
+    <main>
       <section className="mb-40">
         <h1
           className={`${PlayfairDisplayMedium.className} text-7xl font-bold text-center mt-16 pt-20 animate-fade-in-short`}
@@ -19,6 +19,6 @@ export default async function Projects() {
         </p>
       </section>
       <CardsSkeleton />
-    </div>
+    </main>
   );
 }

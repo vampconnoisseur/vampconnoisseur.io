@@ -9,7 +9,7 @@ export const metadata: Metadata = {
 
 export default function Page() {
   return (
-    <>
+    <main>
       <div className="mx-6">
         <h1
           className={`${PlayfairDisplayMedium.className} text-7xl font-bold text-center mt-16 pt-20 animate-fade-in-short`}
@@ -25,6 +25,6 @@ export default function Page() {
         </p>
       </div>
       <Projects addHeading={false} />
-    </>
+    </main>
   );
 }

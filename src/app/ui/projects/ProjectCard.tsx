@@ -1,3 +1,5 @@
+"use client";
+
 import Image from "next/image";
 import { Project } from "@/app/lib/definitions";
 import EmblaCarousel from "../project-carousel/Carousel";
@@ -15,7 +17,7 @@ const ProjectCard: React.FC<Project> = ({
   return (
     <div className="relative mb-8">
       <div className="rounded-lg shadow-lg p-3 border border-gray-300 mb-4 transition-transform hover:-translate-y-2 transition-shadow hover:shadow-2xl">
-        <EmblaCarousel slides={images} options={OPTIONS} />
+        <EmblaCarousel slides={images} options={OPTIONS} github={github} />
       </div>
       <div className="flex items-center justify-between mb-1">
         <h3 className="text-xl font-bold">{projectname}</h3>

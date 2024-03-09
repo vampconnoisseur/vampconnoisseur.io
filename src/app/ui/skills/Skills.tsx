@@ -4,7 +4,7 @@ import { BeVietnamProRegular, PlayfairDisplayMedium } from "@/app/lib/fonts";
 
 export default function Skills() {
   return (
-    <section className="mt-40">
+    <section className="pt-40 pb-20" id="section-2">
       <div className="flex items-center mb-12 text-center px-6">
         <hr className="flex-grow border-t border-black border-solid" />
         <h2 className="text-xl md:text-3xl font-bold mx-4">My Toolbelt</h2>
