@@ -5,13 +5,13 @@ import { BeVietnamProRegular, PlayfairDisplayMedium } from "@/app/lib/fonts";
 export default function Skills() {
   return (
     <section className="pt-40 pb-20" id="section-2">
-      <div className="flex items-center mb-12 text-center px-6">
+      <div className="flex items-center mb-12 text-center">
         <hr className="flex-grow border-t border-black border-solid" />
         <h2 className="text-xl md:text-3xl font-bold mx-4">My Toolbelt</h2>
         <hr className="flex-grow border-t border-black border-solid" />
       </div>
 
-      <div className="md:flex justify-between px-4 items-center">
+      <div className="md:flex justify-between items-center">
         <div className="flex flex-col md:items-start mb-28">
           <h2
             className={`${PlayfairDisplayMedium.className} text-center md:text-left text-4xl font-bold mb-6`}

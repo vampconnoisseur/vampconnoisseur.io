@@ -4,7 +4,7 @@ import ScrollButton from "./scroll-button";
 export default function Hero() {
   return (
     <section
-      className="text-center max-w-[980px] md:mx-auto mx-6 pt-20 pb-40 flex flex-col items-center"
+      className="text-center max-w-[980px] md:mx-auto pt-20 pb-40 flex flex-col items-center"
       id="section-0"
     >
       <h1
