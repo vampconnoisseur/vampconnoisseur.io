@@ -1,6 +1,7 @@
 import Hero from "./ui/Hero";
 import Skills from "./ui/skills/Skills";
 import { CardsSkeleton } from "./ui/skeletons";
+import SideNavigator from "./ui/side-navigator";
 
 export default function Home() {
   return (
@@ -10,13 +11,14 @@ export default function Home() {
         <div className="flex items-center mb-12 text-center px-6">
           <hr className="flex-grow border-t border-black border-solid" />
           <h2 className="text-xl md:text-3xl font-bold mx-4">
-            All of my projects
+            Some of my projects
           </h2>
           <hr className="flex-grow border-t border-black border-solid" />
         </div>
         <CardsSkeleton />
       </section>
       <Skills />
+      <SideNavigator sections={3} />
     </main>
   );
 }
